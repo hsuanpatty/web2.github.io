@@ -1,0 +1,275 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+
+.main-bg {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--primary-color);
+    overflow: hidden;
+}
+
+.logo img {
+    height: 30px;
+    cursor: pointer;
+}
+
+.navber {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navber ul li {
+    display: inline-block;
+    margin: 10px 20px;
+    padding-top: 20px;
+}
+
+.navber ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+.navber ul li a:hover {
+    color: rgb(49, 90, 255);
+}
+
+.navber .fa {
+    display: none;
+}
+
+.navber .fa-solid {
+    display: none;
+}
+
+
+
+/*                    info                   */
+
+.info {
+    margin-top: 10%;
+}
+
+.info h1 {
+    font-weight: 800;
+    margin-bottom: 20px;
+    line-height: 60px;
+    color: var(--secondary-color);
+}
+
+.info p {
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--secondary-color);
+}
+
+
+.info span {
+    color: rgb(49, 90, 255);
+}
+
+
+.info a {
+    background-color: var(--box-color);
+    color: var(--p-color);
+    padding: 10px 18px;
+    text-decoration: none;
+    margin: 30px 0;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+
+/*                    img-box                   */
+
+.img-box {
+    position: absolute;
+    width: 40%;
+    height: 80%;
+    right: 120px;
+    bottom: 0;
+}
+
+.img-box img {
+    position: absolute;
+    height: 88%;
+    bottom: 0;
+    left: 48%;
+    transform: translateX(-48%);
+
+    transition: butten 1s, left 1s;
+}
+
+
+.img-box:hover .back-img {
+    bottom: 40px;
+}
+
+.img-box:hover .main-img {
+    left: 65%;
+}
+
+
+/*            @media (max-width:768px)           */
+
+@media (max-width:768px) {
+    .navber ul li {
+        display: block;
+    }
+
+    .navber ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 500;
+    }
+
+    .navber ul li a:hover {
+        color: rgb(255, 255, 255);
+    }
+
+    .menu {
+        position: fixed;
+        background: rgb(86, 119, 250);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 50;
+
+        transition: all 1s;
+    }
+
+    .navber .fa {
+        display: block;
+        color: #000;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .navber .fa-xmark {
+        display: block;
+        color: #000;
+        margin-top: 30px;
+        margin-left: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+}
+
+
+@media (max-width:767px) {
+
+    .info h1 {
+        font-size: 35px;
+        font-weight: 800;
+        margin-bottom: 20px;
+        line-height: 60px;
+        text-align: left;
+    }
+
+    .info p {
+        font-size: 18px;
+        line-height: 22px;
+        color: var(--secondary-color);
+    }
+
+    .img-box img {
+        display: block;
+        height: 48%;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .main-bg {
+        position: absolute;
+        height: 140vh;
+        width: 100%;
+
+    }
+
+
+}
+
+/*         social-links       */
+
+.social-links {
+    margin-top: 30px;
+}
+
+.social-links a {
+    font-size: 30px;
+    color: var(--secondary-color);
+    margin-right: 20px;
+}
+
+.social-links a:hover {
+    color: rgb(49, 90, 255);
+}
+
+/*                 id icon                  */
+
+#icon {
+    width: 30px;
+    cursor: pointer;
+    padding-top: 25px;
+}
+
+.menu ul {
+    flex: 1;
+    text-align: right;
+    float: left;
+}
+
+@media (max-width:767px) {
+    .social-links {
+        margin-left: 8%;
+        margin-top: 5px;
+    }
+
+    #icon {
+        width: 30px;
+        cursor: pointer;
+        padding-top: 0;
+        margin-top: -40px;
+    }
+
+
+}
+
+/*                 root                */
+
+:root {
+    --primary-color: #f4f6fa;
+    --secondary-color: #212121;
+    --box-color: rgb(253, 99, 140);
+    --p-color: #fff;
+
+}
+
+
+.dark-theme {
+    --primary-color: rgb(240, 207, 223);
+    --secondary-color: #fff;
+    --box-color: #fff;
+    --p-color: rgb(86, 119, 250);
+}

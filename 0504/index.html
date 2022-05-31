@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3224ea6515.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>carter's web</title>
+</head>
+<body>
+    <div class="wrappe main-bg">
+            <div class="container">
+               <nav class="navber">
+                    <div class="logo">
+                       <img src="img/Carters.png" alt="">
+                    </div>
+                    <div class="menu" id="navLinks">
+                        <div class="close">
+                            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                        </div>
+                        <ul>
+                            <li><a href="">HOME</a></li>
+                            <li><a href="">ABOUT</a></li>
+                            <li><a href="">PORTFOLIO</a></li>
+                            <li><a href="">SERVICES</a></li>
+                            <li><a href="">HIRE ME</a></li>
+                        </ul>
+                        <img src="../0504/img/moon.png" alt="" id="icon">
+                    </div>
+                    <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i> 
+                </nav>
+            </div>
+
+        <div class="info">
+            <div class="container">
+                <div class="row">
+                     <div class="col-12 col-md-12">
+                        <h1>RED, WHITE & BLUE JAMMIES <br>
+                        <span>25 % OFF</span> 
+                        </h1>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing <br>
+                            elit. Maiores voluptatem<br> 
+                            similique quaerat, cumque ipsum tenetur.
+                        </p>
+                         <a href="">SHOP FOURTH OF JULY</a>
+                  </div>
+                </div>                   
+            </div>
+           
+        </div>    
+
+        <div class="img-box">
+            <div class="container">
+               <div class="row">
+                    <div class="col-12 col-md-12">
+                    <img src="img/pattern.png" alt="" class="back-img">
+                    <img src="img/kids.png" alt="" class="main-img">
+                </div>
+               </div>
+            </div>
+           
+        </div>
+
+
+        <div class="social-links">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-12">
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a href=""><i class="fab fa-behance"></i></a>
+                        <a href=""><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+         <!--    start Javascript for Toggle Menu     -->
+
+         <script>
+            var navLinks=document.getElementById("navLinks")
+
+            function showMenu(){
+                navLinks.style.right="0";
+            } 
+
+            function hideMenu(){
+                navLinks.style.right="-200px";
+            }  
+
+        </script>
+
+        <!--   end Javascript for Toggle Menu     -->
+
+        <!--    start icon moomn     -->
+
+        <script>
+            var icon = document.getElementById("icon");
+            icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src="img/sun.png";
+            }
+            else{
+                icon.src="img/moon.png";
+            }
+            }
+
+        </script>
+
+        <!--    end icon moomn     -->
+
+
+       
+    </div>
+    
+</body>
+</html>
