@@ -108,9 +108,9 @@ li {
 
 .img-box img {
     position: absolute;
-    height: 88%;
+    height: 82%;
     bottom: 0;
-    left: 48%;
+    left: 66%;
     transform: translateX(-48%);
 
     transition: butten 1s, left 1s;
