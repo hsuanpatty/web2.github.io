@@ -199,6 +199,11 @@ li {
         left: 50%;
         transform: translateX(-50%);
     }
+    
+    .img-box:hover .back-img {
+    bottom: 0;
+    }
+
 
     .main-bg {
         position: absolute;
